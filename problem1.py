@@ -24,6 +24,7 @@
 #         return root
 
 
+# time O(n), space:O(n)
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
         inorderMap = {val:idx for idx, val in enumerate(inorder)}
